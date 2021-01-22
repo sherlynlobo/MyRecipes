@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MyRecipes</string>
     <string name="word">Paneer</string>
+    <string name="Recipe">Ingredients: 2 Onions, 1 Tomato, 3 Chillies, Coriander, Paneer</string>
+
 
 </resources>
