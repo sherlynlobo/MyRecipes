@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashScreen : AppCompatActivity() {
 
@@ -12,12 +13,12 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-
-    }
-
-    fun goToRecipe(view: View) {
-        Toast.makeText(this@SplashScreen,R.string.word, Toast.LENGTH_LONG).show()
-        val intent = Intent(this@SplashScreen,RecipeInfo::class.java)
+    btnGetStarted.setOnClickListener{
+        var intent = Intent(this@SplashScreen,HomeActivity::class.java)
         startActivity(intent)
+        finish()
+        }
     }
+
+
 }
